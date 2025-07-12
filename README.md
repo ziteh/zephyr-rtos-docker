@@ -68,6 +68,10 @@ docker build \
   "./zephyr-dev"
 ```
 
+## Dev Containers
+
+Refer to [ziteh/zephyr-rtos-devcontainer](https://github.com/ziteh/zephyr-rtos-devcontainer)
+
 ## Zephyr SDK Version
 
 [Zephyr SDK Version Compatibility Matrix](https://github.com/zephyrproject-rtos/sdk-ng/wiki/Zephyr-SDK-Version-Compatibility-Matrix)
