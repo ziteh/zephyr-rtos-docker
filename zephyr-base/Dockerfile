@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM ubuntu:24.04
 
 ARG ZEPHYR_SDK_VERSION=0.16.4
 ARG ZEPHYR_SDK_INSTALL_DIR=/opt/toolchains/zephyr-sdk-${ZEPHYR_SDK_VERSION}
