@@ -31,9 +31,9 @@ _To build an image for Arm Cortex-M targets:_
 docker build \
   --build-arg ZEPHYR_SDK_VERSION=0.17.2 \
   --build-arg ZEPHYR_SDK_TOOLCHAINS="-t arm-zephyr-eabi" \
-  -f "./zephyr/Dockerfile" \
+  -f "./zephyr-arch/Dockerfile" \
   -t zephyr:arm-0.17.2SDK \
-  "./zephyr"
+  "./zephyr-arch"
 ```
 
 _To build an image for multiple toolchains:_
@@ -42,9 +42,9 @@ _To build an image for multiple toolchains:_
 docker build \
   --build-arg ZEPHYR_SDK_VERSION=0.17.2 \
   --build-arg ZEPHYR_SDK_TOOLCHAINS="-t arm-zephyr-eabi -t riscv64-zephyr-elf" \
-  -f "./zephyr/Dockerfile" \
+  -f "./zephyr-arch/Dockerfile" \
   -t zephyr:arm_riscv-0.17.2SDK \
-  "./zephyr"
+  "./zephyr-arch"
 ```
 
 _There is a different Dockerfile for Posix target like `native_sim`. To build:_
