@@ -1,6 +1,8 @@
 FROM ubuntu:24.04
 
-ARG ZEPHYR_SDK_VERSION=0.16.4
+# Zephyr SDK Version Compatibility Matrix
+# https://github.com/zephyrproject-rtos/sdk-ng/wiki/Zephyr-SDK-Version-Compatibility-Matrix
+ARG ZEPHYR_SDK_VERSION=0.17.2
 ARG ZEPHYR_SDK_INSTALL_DIR=/opt/toolchains/zephyr-sdk-${ZEPHYR_SDK_VERSION}
 
 # OS dependencies and packages
