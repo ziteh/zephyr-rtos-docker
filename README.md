@@ -57,6 +57,17 @@ docker build \
   "./zephyr-posix"
 ```
 
+_To build an image for specified Zephyr revision:_
+
+```
+docker build \
+  --build-arg BASE_IMAGE="zephyr:arm-0.17.2SDK" \
+  --build-arg ZEPHYR_REVISION=4.1.0 \
+  -f "./zephyr-dev/Dockerfile" \
+  -t zephyr:arm-0.17.2SDK-4.1.0 \
+  "./zephyr-dev"
+```
+
 ## Zephyr SDK Version
 
 [Zephyr SDK Version Compatibility Matrix](https://github.com/zephyrproject-rtos/sdk-ng/wiki/Zephyr-SDK-Version-Compatibility-Matrix)
