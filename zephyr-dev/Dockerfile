@@ -16,5 +16,3 @@ RUN west init -m ${ZEPHYR_URL} --mr v${ZEPHYR_REVISION} ./ && \
 
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# WORKDIR /workspace
